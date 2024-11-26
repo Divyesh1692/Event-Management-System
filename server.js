@@ -2,10 +2,11 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import { connectDB } from "./backend/config/db.js"; // Adjust path if needed
+
 import userRouter from "./backend/routes/userRoutes.js"; // Adjust path if needed
 import eventRouter from "./backend/routes/eventRoutes.js"; // Adjust path if needed
 import setupEventNotifications from "./backend/utils/scheduleNotification.js"; // Adjust path if needed
+import dbCOnnect from "./backend/config/db.js";
 
 dotenv.config();
 
@@ -28,7 +29,7 @@ app.get("/", (req, res) => {
 });
 
 // Connect to database
-connectDB();
+dbCOnnect();
 
 // Initialize event notifications
 setupEventNotifications();
