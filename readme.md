@@ -4,6 +4,12 @@ The **Event Management System** is a backend project that allows users to create
 
 ---
 
+Vercel Deployment Url : https://event-management-system-three-weld.vercel.app/
+
+You can test all API endpoints in Postman or similar services. All endpoints information is given below. Please go through it.
+
+---
+
 ## Features
 
 ### User Features
@@ -162,11 +168,3 @@ The **Event Management System** is a backend project that allows users to create
    Email updates are automated via Nodemailer and Node-Cron.
 
 ---
-
-## Deployment
-
-This project can be deployed on **Vercel**. Ensure the `.env` variables are configured in the Vercel environment settings.
-
----
-
-Feel free to contribute or raise issues to improve this project! 🚀
